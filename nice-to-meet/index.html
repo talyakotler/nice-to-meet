@@ -1,0 +1,368 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body onload="tab_nav(), scrollReveal(), smootheScrolling(), accessible(), linksUnderline()">
+    <div id="out-of-container">
+        <div class="nav-bg"></div>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-images-bg" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner introduction-carousel-inner" role="listbox" aria-hidden="true">
+                <div class="carousel-item introduction-carousel-item active slide-one"></div>
+                <div class="carousel-item introduction-carousel-item slide-two"> </div>
+                <div class="carousel-item introduction-carousel-item slide-three"></div>
+            </div>
+            <a tabindex="-1" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" aria-hidden="true">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a tabindex="-1" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" aria-hidden="true">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+            <a tabindex="-1" href="#anchor-choose-country" class="anchor" target="_self"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+        <div class="countries-bg"></div>
+        <div class="quickfacts-bg"></div>
+        <div class="footer-bg"></div>
+        <div class="footer-line"></div>
+
+    </div>
+
+    <div id="container">
+        <!-- NavBar -->
+        <div class="navbar fixed-top menu-fixed">
+            <header role="banner">
+                <ul id="skip">
+                    <li><a href="#content-anchor">דלג לתוכן <i class="fas fa-chevron-left" aria-hidden="true"></i></a></li>
+                </ul>
+                <a class="logo" href="index.html" target="_self">
+                    <div class="logo-img"></div>
+                    <h1>Nice to Meet</h1>
+                    <p>מדריך לתקשורת עסקית במדינות שונות</p>
+                </a>
+                <nav role="navigation" aria-label="תפריט ניווט ראשי">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" title="אירופה">אירופה</a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="notActive"> <div class="ico ita"></div> איטליה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico uk"></div> בריטניה</a></li>
+                                <li><a href="germany.html" target="_self"> <div class="ico ger"></div> גרמניה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico nld"></div> הולנד</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico gre"></div> יוון</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico esp"></div> ספרד</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico fra"></div> צרפת</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico swd"></div> שוויץ</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" title="אמריקה">אמריקה</a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="notActive"> <div class="ico arg"></div> ארגנטינה</a></li>
+                                <li><a href="usa.html"> <div class="ico usa"></div> ארצות הברית</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico bra"></div> ברזיל</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico mex"></div> מקסיקו</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico bia"></div> קולומביה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico can"></div> קנדה</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" title="אסיה">אסיה</a>
+                            <ul class="sub-menu">
+                                <li><a href="India.html" target="_self"> <div class="ico ind"></div> הודו</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico hkg"></div> הונג קונג</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico jap"></div> יפן</a></li>
+                                <li><a href="china.html" target="_self"> <div class="ico chi"></div> סין</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico sin"></div> סינגפור</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico kor"></div> קוריאה הדרומית</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico rus"></div> רוסיה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico tha"></div> תאילנד</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" title="אפריקה">אפריקה</a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="notActive"> <div class="ico eth"></div> אתיופיה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico saf"></div> דרום אפריקה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico egy"></div> מצרים</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico mar"></div> מרוקו</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico nig"></div> ניגריה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico ken"></div> קניה</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" title="אוסטרליה והסביבה">אוסטרליה והסביבה</a>
+                            <ul class="sub-menu oceania">
+                                <li><a href="#" class="notActive"> <div class="ico aus"></div> אוסטרליה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico nzl"></div> ניו זילנד</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico png"></div> פפאו-גינאה החדשה</a></li>
+                                <li><a href="#" class="notActive"> <div class="ico fji"></div> פיג'י</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu-item-link" href="interactive.html" target="_self">השוואת מדינות</a></li>
+                        <li>
+                            <a href="javascript:void(0)">נגישות</a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="clickable colors" id="changeContrastButton">שינוי ניגודיות</a></li>
+                                <li><a href="#" class="clickable links" id="changeUnderlineButton">הדגשת קישורים</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main role="main">
+            <a name="content-anchor" class="accessibility">Main Content</a>
+            <!-- Introduction Banner -->
+            <section class="introduction" role="region" aria-labelledby="intro-h">
+                <h2 id="intro-h">עובדים עם אנשים מחו"ל?</h2>
+                <p>אנחנו נספק לכם כללי תקשורת יעילים וקלים ליישום <br /> שיעזרו לכם לתקשר עם השותפים העסקיים שלכם מעבר לים.</p>
+                <a href="#anchor-choose-country" target="_self" class="btns start-btn anchor">התחילו כאן</a>
+
+            </section>
+
+            <!-- Choose Country Section -->
+
+            <section class="countries" role="region" aria-labelledby="countries-h">
+                <span id="anchor-choose-country"></span> <!-- anchor point -->
+                <h2 id="countries-h" class="h-underline center">המדינות הנפוצות</h2>
+                <p>למדו על: ברכות שלום | סגנון תקשורת | לבוש עסקי | פגישות עסקיות | משא ומתן | מתן מתנות | כרטיסי ביקור</p>
+                <p>עם איזו מדינה אתם עובדים?</p>
+                <ul>
+                    <li class="flag-wrap">
+                        <a href="usa.html" target="_self">
+                            <div class="flag usa"></div>
+                            ארה"ב
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="#" class="notActive">
+                            <div class="flag uk"></div>
+                            בריטניה
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="germany.html" target="_self">
+                            <div class="flag ger"></div>
+                            גרמניה
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="#" class="notActive">
+                            <div class="flag jap"></div>
+                            יפן
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="#" class="notActive">
+                            <div class="flag bra"></div>
+                            ברזיל
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="#" class="notActive">
+                            <div class="flag saf"></div>
+                            דרום אפריקה
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="India.html" target="_self">
+                            <div class="flag ind"></div>
+                            הודו
+                        </a>
+                    </li>
+                    <li class="flag-wrap">
+                        <a href="china.html" target="_self">
+                            <div class="flag chi"></div>
+                            סין
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Quick Facts Section -->
+
+
+            <div id="quickFacts" class="carousel slide quick-facts" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#quickFacts" data-slide-to="0" class="active"></li>
+                    <li data-target="#quickFacts" data-slide-to="1"></li>
+                    <li data-target="#quickFacts" data-slide-to="2"></li>
+                    <li data-target="#quickFacts" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <section class="carousel-item quick-facts-item first-slide active">
+                        <div class="slide-skew">
+                            <div class="slide-content">
+                                <div>
+                                    <div class="fact-flag flag chi"></div>
+                                    <h2>סין</h2>
+                                </div>
+                                <p>בסין נהוג לסרב לקבל מתנה 3 פעמים <br /> לפני שמסכימים לקבל אותה.</p>
+                                <a href="china.html" target="_self" class="btns quick-facts-btn">קרא עוד על סין</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="carousel-item quick-facts-item second-slide">
+                        <div class="slide-skew">
+                            <div class="slide-content">
+                                <div>
+                                    <div class="fact-flag flag usa"></div>
+                                    <h2>ארה"ב</h2>
+                                </div>
+                                <p>בארצות הברית קוד הלבוש העסקי <br /> משתנה בהתאם לאיזור במדינה.</p>
+                                <a href="usa.html" target="_self" class="btns quick-facts-btn">קרא עוד על ארה"ב</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="carousel-item quick-facts-item third-slide">
+                        <div class="slide-skew">
+                            <div class="slide-content">
+                                <div>
+                                    <div class="fact-flag flag ger"></div>
+                                    <h2>גרמניה</h2>
+                                </div>
+                                <p>בגרמניה צריך להגיע לפגישה עם <br /> מתורגמן ולתרגם את החומרים לגרמנית.</p>
+                                <a href="germany.html" target="_self" class="btns quick-facts-btn">קרא עוד על גרמניה</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="carousel-item quick-facts-item fourth-slide">
+                        <div class="slide-skew">
+                            <div class="slide-content">
+                                <div>
+                                    <div class="fact-flag flag ind"></div>
+                                    <h2>הודו</h2>
+                                </div>
+                                <p>בהודו יד שמאל נחשבת טמאה <br /> ולכן אף פעם אין להושיטה.</p>
+                                <a href="India.html" target="_self" class="btns quick-facts-btn">קרא עוד על הודו</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <a class="carousel-control-next" href="#quickFacts" role="button" data-slide="next">
+                    <i class="fas fa-chevron-left quick-facts-arrow left" aria-hidden="true" aria-label="עובדה הבאה"></i>
+                    <span class="sr-only">נווט לעובדה הבאה</span>
+                </a>
+
+                <a class="carousel-control-prev" href="#quickFacts" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-right quick-facts-arrow right" aria-hidden="true" aria-label="עובדה הבאה"></i>
+                    <span class="sr-only">נווט לעובדה הבאה</span>
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+
+        <footer role="contentinfo">
+            <nav role="navigation" aria-label="תפריט ניווט תחתון"> 
+                <ul>
+                    <li class="footer-countries">
+                        <h2>אירופה</h2>
+                        <ul>
+                            <li><a href="#" class="notActive">איטליה</a></li>
+                            <li><a href="#" class="notActive">בריטניה</a></li>
+                            <li><a href="germany.html" target="_self">גרמניה</a></li>
+                            <li><a href="#" class="notActive">הולנד</a></li>
+                            <li><a href="#" class="notActive">יוון</a></li>
+                            <li><a href="#" class="notActive">ספרד</a></li>
+                            <li><a href="#" class="notActive">צרפת</a></li>
+                            <li><a href="#" class="notActive">שוויץ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-countries">
+                        <h2>אמריקה</h2>
+                        <ul>
+                            <li><a href="#" class="notActive">ארגנטינה</a></li>
+                            <li><a href="usa.html" target="_self">ארצות הברית</a></li>
+                            <li><a href="#" class="notActive">ברזיל</a></li>
+                            <li><a href="#" class="notActive">מקסיקו</a></li>
+                            <li><a href="#" class="notActive">קולומביה</a></li>
+                            <li><a href="#" class="notActive">קנדה</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-countries">
+                        <h2>אסיה</h2>
+                        <ul>
+                            <li><a href="India.html" target="_self">הודו</a></li>
+                            <li><a href="#" class="notActive">הונג קונג</a></li>
+                            <li><a href="#" class="notActive">יפן</a></li>
+                            <li><a href="china.html" target="_self">סין</a></li>
+                            <li><a href="#" class="notActive">סינגפור</a></li>
+                            <li><a href="#" class="notActive">קוריאה הדרומית</a></li>
+                            <li><a href="#" class="notActive">רוסיה</a></li>
+                            <li><a href="#" class="notActive">תאילנד</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-countries">
+                        <h2>אפריקה</h2>
+                        <ul>
+                            <li><a href="#" class="notActive">אתיופיה</a></li>
+                            <li><a href="#" class="notActive">דרום אפריקה</a></li>
+                            <li><a href="#" class="notActive">מצרים</a></li>
+                            <li><a href="#" class="notActive">מרוקו</a></li>
+                            <li><a href="#" class="notActive">ניגריה</a></li>
+                            <li><a href="#" class="notActive">קניה</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-countries">
+                        <h2>אוסטרליה והסביבה</h2>
+                        <ul>
+                            <li><a href="#" class="notActive">אוסטרליה</a></li>
+                            <li><a href="#" class="notActive">ניו זילנד</a></li>
+                            <li><a href="#" class="notActive">פפאו-גינאה החדשה</a></li>
+                            <li><a href="#" class="notActive">פיג'י</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-links"><a href="interactive.html" target="_self">השוואת מדינות</a></li>
+                    <li class="footer-links"><a href="aboutUs.html" target="_self">אודות</a></li>
+                    <li class="footer-links"><a href="sitemap.html" target="_self">מפת אתר</a></li>
+                    <li class="footer-links"><a href="contactUs.html" target="_self">צור קשר</a></li>
+                </ul>
+            </nav>
+            <p>© כל הזכויות שמורות לצוות Nice to Meet</p>
+        </footer>
+
+        <!-- back to top btn -->
+        <a href="javascript:void(0)" id="top-btn"><i class="fas fa-chevron-up" aria-label="לחץ כדי לחזור לתחילת העמוד"></i></a>
+    </div>
+</body>
+</html>
